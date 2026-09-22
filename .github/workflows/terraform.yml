@@ -3,11 +3,11 @@ name: Terraform CI
 on:
   push:
     branches:
-      - main
+      - Dev
 
   pull_request:
     branches:
-      - main
+      - Dev
 
 jobs:
   terraform:
@@ -32,4 +32,4 @@ jobs:
         run: terraform validate
 
       - name: Terraform Plan
-        run: terraform      plan
+        run: terraform plan
