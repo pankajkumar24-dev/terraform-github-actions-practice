@@ -38,3 +38,6 @@ jobs:
 
       - name: Terraform Plan
         run: terraform plan -input=false
+      - name: Terraform Apply
+        if: github.event_name == 'push' && github.ref == 'refs/heads/Dev'
+        run: terraform apply -auto-approve -input=false
