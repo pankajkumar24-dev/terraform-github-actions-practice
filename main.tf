@@ -19,4 +19,3 @@ resource "azurerm_resource_group" "example" {
   name     = each.key
   location = each.value
 }
-}
