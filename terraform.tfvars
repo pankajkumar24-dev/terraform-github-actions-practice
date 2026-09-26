@@ -1,2 +1,4 @@
-resource_group_name = "rg-terraform-github-practice"
-location            = "East US"
+resource_groups = {
+  rg-terraform-github-practice = "East US"
+  rg-terraform-dev             = "West US"
+}
